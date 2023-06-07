@@ -8,7 +8,7 @@ class Program {
     int quantity = Prompt("Какое количество чисел хотите ввести? ");
     int count = 0;
     for (int counter = 1; counter <= quantity; counter++) {
-      if (Prompt($"Введите {counter}-e число ") > 0) count++;
+      if (Prompt($"Введите {counter}-e число: ") > 0) count++;
     }
     Console.WriteLine($"Количество положительных чисел: {count}");
   }
