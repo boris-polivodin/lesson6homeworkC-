@@ -21,7 +21,7 @@ class Program {
   }
   static double Prompt(string message) {
     Console.Write(message);
-    string readInput = Console.ReadLine();
+    string readInput = Console.ReadLine() ?? "null";
     double number;
     bool isNumber = double.TryParse(readInput, out number);
     return number;

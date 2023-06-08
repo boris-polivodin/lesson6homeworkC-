@@ -15,7 +15,7 @@ class Program {
 
   static int Prompt(string message) {
     Console.Write(message);
-    string readInput = Console.ReadLine();
+    string readInput = Console.ReadLine() ?? "null";
     int number;
     bool isNumber = int.TryParse(readInput, out number);
     return number;
